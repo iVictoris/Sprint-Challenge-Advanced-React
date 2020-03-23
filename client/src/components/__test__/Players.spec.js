@@ -6,4 +6,7 @@ test('should render without crashing', () => {
   render(<Players />);
 });
 
-test('should pull in 100 Player items', () => {});
+test('should pull in 100 Player items', () => {
+  const { getAllByTestId } = render(<Players />);
+  expect(getAllByTestId('player-items').length).toBe(100);
+});
