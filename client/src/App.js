@@ -1,11 +1,13 @@
 import React from 'react';
-import './App.css';
 import { Players } from './components';
 
 function App() {
   return (
     <div className="App">
-      <Players />
+      <header>
+        <h1>Robo Fighter Roster</h1>
+      </header>
+      <Players className="Players" />
     </div>
   );
 }
