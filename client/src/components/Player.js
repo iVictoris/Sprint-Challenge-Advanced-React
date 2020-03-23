@@ -2,7 +2,7 @@ import React from 'react';
 
 const Player = ({ name, searches, id, country }) => {
   return (
-    <div className="Player Card">
+    <div className="Player Card" data-testid="player-items">
       <img src={`https://robohash.org/${name}.png`} />
       <section className="Player-info">
         <section>
