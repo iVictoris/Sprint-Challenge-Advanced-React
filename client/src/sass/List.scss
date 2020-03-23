@@ -1,0 +1,17 @@
+.List {
+  display: flex;
+  margin-top: 25px;
+  overflow-y: scroll;
+}
+
+.Players.List {
+  height: 100%;
+  width: 75%;
+  margin: 25px auto 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
