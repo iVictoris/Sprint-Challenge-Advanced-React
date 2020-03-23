@@ -1,8 +1,9 @@
 import React from 'react';
 import { List, withData } from './';
-import { withPlayer } from '../hooks';
+import { usePlayers } from '../hooks';
 const Players = props => {
-  return <List></List>;
+  const [players, setPlayers, makePlayers] = usePlayers(props.data);
+  return <List>{makePlayers()}</List>;
 };
 
 export default withData(Players)({ url: 'http://localhost:5000/api/players' });
