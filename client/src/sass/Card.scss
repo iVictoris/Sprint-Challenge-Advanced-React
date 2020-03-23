@@ -1,0 +1,33 @@
+.Card {
+  box-shadow: 1px 1px 3px black;
+  background: white;
+  border-top: 1px solid $blue;
+  border-bottom: 1px solid $blue;
+  border-left: 1px solid darken($color: $blue, $amount: 25);
+  border-right: 1px solid darken($color: $blue, $amount: 25);
+}
+
+.Player {
+  img {
+    border-bottom: 1px solid #000;
+  }
+  &.Card {
+    min-width: 25%;
+    width: 27%;
+    margin-bottom: 20px;
+
+    font-size: 1rem;
+  }
+
+  &-info {
+    text-align: center;
+
+    & > section {
+      margin-bottom: 10px;
+
+      & > p:nth-child(1) {
+        font-weight: 500;
+      }
+    }
+  }
+}
