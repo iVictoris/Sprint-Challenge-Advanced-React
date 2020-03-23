@@ -1,0 +1,9 @@
+.Card {
+  box-shadow: 1px 1px 3px black;
+  border-radius: 5px;
+  background: white;
+}
+
+.Player.Card {
+  width: 300px;
+}
